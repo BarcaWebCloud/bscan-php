@@ -1,0 +1,35 @@
+{
+    "name": "bwc/bscan",
+    "description": "BScan is a library PHP for scan any computational device and atmospheric environment.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BWC\\BScan\\": "src/BScan"
+        },
+        "files": [
+          "src/BScan/Hello.php"
+        ]
+    },
+    "extra": {
+     "laravel": {
+        "providers": [
+          "BScan\\HelloServiceProvider"
+        ]
+      }
+    },
+    "authors": [
+      {
+        "name": "Aníbal Barca",
+        "email": "anibalbs@barca.com"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=7.1.3",
+      "illuminate/support": "5.6.* || 5.7.* || 5.8.* || 6.0.*"
+    },
+    "require-dev": {
+      "orchestra/testbench": "^3.8"
+    }
+}
